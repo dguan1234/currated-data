@@ -5,3 +5,8 @@ html, body {
 canvas {
   display: block;
 }
+
+.drinkButton {
+  padding: 20px;
+  background-color: #da61ff;
+}
