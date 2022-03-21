@@ -83,10 +83,12 @@ function setup() {
   button = createButton("click to randomize a drink")
   button.mousePressed(buttonPressed);
   button.class("drinkButton");
+  button.position(650,650)
 }
 
 
 function buttonPressed() {
+  button.hide()
   setTimeout(loadingScreen, 1500)
   setTimeout(loadingScreen2, 3500)
   setTimeout(loadingScreen3, 5500)
@@ -134,7 +136,7 @@ function loadingScreen3() {
 
 
 function randomFruitPicker() {
-
+  button.show()
   background(random(125, 160), random(65, 85), random(34, 55))
   image(bar, 0, 0)
   let randomFruit = int(random(fruits.length))
