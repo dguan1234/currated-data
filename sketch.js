@@ -23,6 +23,7 @@ let counter = 0;
 let button;
 let bar;
 let robottoBold
+let dancingScript
 
 
 function preload() {
@@ -31,6 +32,7 @@ function preload() {
   bar = loadImage('images/bar.png')
 
   robottoBold = loadFont('assets/robotto-bold.ttf')
+  dancingScript = loadFont('assets/dancingScript.ttf')
 
   let ft0 = loadImage('images/apple.png')
   let ft1 = loadImage('images/apricot.png')
@@ -77,7 +79,7 @@ function setup() {
   image(smoothieBackground, 0, 0)
   textSize(50)
   textAlign(CENTER);
-  textFont(robottoBold)
+  textFont(dancingScript)
   text("Your Smoothie Randomizer", 750, 400);
   pop();
   button = createButton("click to randomize a drink")
@@ -99,38 +101,38 @@ function buttonPressed() {
 
 
 function loadingScreen() {
-  background(255, random(94,165), random(0,110))
+  background(255, random(94, 165), random(0, 110))
   push()
   textFont(robottoBold)
   textSize(50)
-  fill(random(55,90), random(0,46), 255)
+  fill(random(55, 90), random(0, 46), 255)
   text('LOading.', 800, 400)
   fruitFactDisplay()
-  text('fun fruit fact: ',110,70)
+  text('fun fruit fact: ', 110, 70)
   pop()
 }
 
 function loadingScreen2() {
-  background(255, random(94,165), random(0,110))
+  background(255, random(94, 165), random(0, 110))
   push()
   textFont(robottoBold)
   textSize(50)
-  fill(random(55,90), random(0,46), 255)
+  fill(random(55, 90), random(0, 46), 255)
   text('LOADing..', 800, 400)
   fruitFactDisplay()
-  text('fun fruit fact: ',110,70)
+  text('fun fruit fact: ', 110, 70)
   pop()
 }
 
 function loadingScreen3() {
-  background(255, random(94,165), random(0,110))
+  background(255, random(94, 165), random(0, 110))
   push()
   textFont(robottoBold)
   textSize(50)
-  fill(random(55,90), random(0,46), 255)
+  fill(random(55, 90), random(0, 46), 255)
   text('LOADING...', 800, 400)
   fruitFactDisplay()
-  text('fun fruit fact: ',110,70)
+  text('fun fruit fact: ', 110, 70)
   pop()
 }
 
@@ -149,14 +151,17 @@ function randomFruitPicker() {
   textAlign(CENTER)
   textSize(50)
   textFont(robottoBold)
-  fill(random(0,90), random(140,180), random(245,245))
+  fill(random(0, 90), random(140, 180), random(245, 245))
   decisionDecide()
   pop()
 }
 
 function decisionDecide() {
   let randomDecision = int(random(decision.length))
+  push()
+  textAlign(CENTER)
   text(decision[randomDecision], 750, 600)
+  pop()
 }
 
 function fruitFactDisplay() {
@@ -164,14 +169,14 @@ function fruitFactDisplay() {
   push()
   textFont(robottoBold)
   textSize(30)
-  fill(random(55,90), random(0,46), 255)
-  text(fruitFact[randomFruitFact],110,100)
+  fill(random(55, 90), random(0, 46), 255)
+  text(fruitFact[randomFruitFact], 110, 100)
   pop()
   push()
   textSize(15)
   textFont(robottoBold)
-  fill(random(55,90), random(0,46), 255)
-  text('from Becketts farm', 110,115)
+  fill(random(55, 90), random(0, 46), 255)
+  text('from Becketts farm', 110, 115)
   pop()
 }
 //beepbeep
