@@ -1,1 +1,3 @@
-# currated-data-9000
+
+In my Smoothie Randomizer, I created a piece that demonstrates my ability to randomize data from an array. The reason why I ultimately chose to randomize images of fruits was because not only are fruits delicious, but they are also healthy. In our current time, many people are forgetting to pay attention to their health and what they eat. I wanted this randomizer to be a refresher on the fact that healthy foods exist and that you should broaden your platter outside of junk food.
+I first thought about making a smoothie randomizer when I saw everyone around me eating in an unhealthy way. All my friends were either eating cup noodles or fast food everyday as I have not heard about anyone eating a single fruit. Seeing that this problem is often reoccurring in our current days, I decided to make my randomizer about it.
